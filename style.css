@@ -27,7 +27,7 @@ body {
     z-index: 2;
 }
 
-#menu-button {
+.menu-button {
     cursor: pointer;
     border-style: none;
     border-radius: 10px;
@@ -40,7 +40,7 @@ body {
     transition: 0.5s;
 }
 
-#menu-button:hover {
+.menu-button:hover {
     scale: 1.025;
     transition: 0.5s;
 }
@@ -82,16 +82,26 @@ h1 {
 
 .hash {
     margin-top: 40px;
+    border-radius: 20px;
 }
 
 .contact {
     margin-bottom: 30px;
     cursor: pointer;
     opacity: 5%;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 .contact:hover {
     opacity: 100%;
     transition: 0.5s;
+}
+
+.script {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.image {
+    border-radius: 20px;
 }
