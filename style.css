@@ -105,3 +105,22 @@ h1 {
 .image {
     border-radius: 20px;
 }
+
+.link-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 200px;
+    scale: 0.15;
+    margin-top: -220px;
+    margin-bottom: -300px;
+}
+
+.link-icon {
+    transition: 0.5s;
+}
+
+.link-icon:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
