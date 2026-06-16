@@ -82,20 +82,9 @@ h1 {
 
 .hash {
     margin-top: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
-.contact {
-    margin-bottom: 30px;
-    cursor: pointer;
-    opacity: 5%;
-    transition: 0.5s;
-}
-
-.contact:hover {
-    opacity: 100%;
-    transition: 0.5s;
-}
 
 .script {
     margin-top: 50px;
@@ -112,8 +101,7 @@ h1 {
     align-items: center;  
     gap: 200px;
     scale: 0.15;
-    margin-top: -220px;
-    margin-bottom: -300px;
+    margin-top: -175px;
 }
 
 .link-icon {
