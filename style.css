@@ -57,7 +57,7 @@ h1 {
 }
 
 .text {
-    max-width: 80ch;
+    max-width: 66%;
     margin: 0 auto;
     line-height: 2;
 }
@@ -203,7 +203,7 @@ h1 {
     }
 
     .text {
-        max-width: 90vw;
+        max-width: 66%;
     }
 
 }
