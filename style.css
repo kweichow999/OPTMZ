@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url(material/bg.png);
+    background-color: #212121;
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -42,6 +42,7 @@ body {
     background-color:black;
     color:chartreuse;
     transition: all .25s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
     font-size: 28px;
     padding: 14px 28px;
@@ -49,10 +50,6 @@ body {
 
 .menu-button:hover {
     transform: translateY(-2px);
-}
-
-h1 {
-    padding-top: 0;
 }
 
 .link {
@@ -94,7 +91,8 @@ h1 {
 
 .hash {
     margin-top: 40px;
-    border-radius: 40px;
+    border-radius: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -105,6 +103,7 @@ h1 {
 
 .image {
     border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .link-tab {
