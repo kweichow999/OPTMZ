@@ -1,3 +1,4 @@
+/* Desktop */
 html {
     scroll-behavior: smooth;
 }
@@ -11,38 +12,39 @@ body {
     background-image: url(material/bg.png);
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color:chartreuse;
 }
 
 .menu {
-    top: 0;
-    margin-top: 40px;
-    margin-left: 33%;
+    top: 30px;
     position: fixed;
-    scale: 2;
     cursor: default;
     z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .menu-button {
     cursor: pointer;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 999px;
     margin-right: 5px;
-    padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 7px 14px;
     background-color:black;
     color:chartreuse;
-    transition: 0.5s;
+    transition: all .25s;
+
+    font-size: 28px;
+    padding: 14px 28px;
 }
 
 .menu-button:hover {
-    scale: 1.025;
-    transition: 0.5s;
+    transform: translateY(-2px);
 }
 
 h1 {
@@ -59,25 +61,32 @@ h1 {
     line-height: 2;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin: 200px auto;
+}
+
 .download-link {
     color: chartreuse;
-    transition: 0.5s;
+    transition: transform 0.25s;
     text-decoration: none;
 }
 
 .download-link:hover {
-    scale: 1.025;
-    transition: 0.5s;
+    transform: scale(1.025);
 }
 
 .pc {
     display: flex;
     align-items: flex-start;
-    scale: 0.8;
     margin-top: -100px;
     justify-content: center;
     gap: 15px;
     z-index: 1;
+    scale: 0.8;
 }
 
 .hash {
@@ -98,17 +107,58 @@ h1 {
 .link-tab {
     display: flex;
     justify-content: center;
-    align-items: center;  
-    gap: 200px;
-    scale: 0.15;
-    margin-top: -175px;
+    align-items: center;
 }
 
 .link-icon {
-    transition: 0.5s;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.25s;
 }
 
 .link-icon:hover {
-    scale: 1.1;
-    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding-top: 90px;
+    }
+
+    html {
+        scroll-padding-top: 140px;
+    }
+
+    .menu {
+        justify-content: center;
+        align-content: center;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 6px;
+        padding: 0 5px;
+    }
+
+    .menu-button {
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+
+    .link-tab {
+        gap: 15px;
+    }
+
+    .link-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .content-section {
+        margin: 20px auto 40px auto;
+    }
 }
