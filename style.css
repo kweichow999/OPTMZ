@@ -43,7 +43,6 @@ body {
     color:chartreuse;
     transition: all .25s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-
     font-size: 28px;
     padding: 14px 28px;
 }
@@ -89,13 +88,6 @@ body {
     z-index: 1;
 }
 
-.hash {
-    margin-top: 40px;
-    border-radius: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-
 .script {
     margin-top: 50px;
     margin-bottom: 100px;
@@ -108,7 +100,7 @@ body {
 
 .no-shadow {
     box-shadow: none;
-}   
+}
 
 .link-tab {
     display: flex;
