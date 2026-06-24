@@ -51,6 +51,11 @@ body {
     transform: translateY(-2px);
 }
 
+.disclaimer {
+    background-color: red;
+    color: #ffff;
+}
+
 .link {
     color: chartreuse;
 }
